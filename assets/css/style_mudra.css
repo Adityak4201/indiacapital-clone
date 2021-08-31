@@ -212,7 +212,7 @@ a,button{
 }
 .breadcrumbs .bread-list {
 	border-radius: 3px;
-	display: inline-block;
+	/* display: inline-block; */
 	float:right;
 }
 .breadcrumbs ul li{
@@ -1063,9 +1063,9 @@ a,button{
 .about{
 	background:#fff;
 }
-.about .about-content {
+/* .about .about-content {
 
-}
+} */
 .about .about-content .story{
 	display:block;
 	color:#04AAF4;
@@ -1727,11 +1727,10 @@ a,button{
 	Consultation CSS
 ===============================*/
 .consultation {
-
 	background: #f6f6f6;
 }
 .consultation .con-head{
-	background:#fff;
+	background:#f6f6f6;
 	padding:50px 30px;
 	border-radius:0px;
 }
@@ -2046,7 +2045,7 @@ a,button{
 .pagination .pagination-list li a i{
 	font-size:13px;
 }
-.pagination .pagination-list li a i{}
+/* .pagination .pagination-list li a i{} */
 .blog-grids.pagination{
 	margin-top:50px;
 	text-align:center;
@@ -2127,7 +2126,7 @@ a,button{
 	height: 30px;
 	line-height: 30px;
 	border: 1px solid #e6e6e6;
-	display: inline-block;
+	/* display: inline-block; */
 	text-align: center;
 	float: right;
 	border-radius: 100%;
@@ -2147,7 +2146,7 @@ a,button{
 	margin-right:6px;
 }
 /* Recent Post */
-.blog-sidebar .recent-post{}
+/* .blog-sidebar .recent-post{} */
 .blog-sidebar .single-post {
 	margin-top: 25px;
 }
@@ -2229,7 +2228,7 @@ a,button{
 	color:#444;
 }
 /* Blog Tags */
-.blog-sidebar .side-tags{}
+/* .blog-sidebar .side-tags{} */
 .blog-sidebar .side-tags .tag{
 	margin-top:30px;
 }
@@ -2509,9 +2508,9 @@ a,button{
 .clients {
 	background: #f6f6f6;
 }
-.clients .single-clients{
+/* .clients .single-clients{
 
-}
+} */
 .clients .single-clients img{
 	opacity:0.9;
 	-webkit-transition:all 0.4s ease;
@@ -2977,7 +2976,7 @@ a,button{
 	color:#e92527;
 }
 /* Latest News */
-.footer .latest-news{}
+/* .footer .latest-news{} */
 .footer .single-news {
 	margin-bottom: 16px;
 	padding-left: 70px;
