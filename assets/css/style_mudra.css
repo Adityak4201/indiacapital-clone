@@ -1196,6 +1196,11 @@ button {
   width: 100%;
 }
 
+.img-bod {
+  height: 300px;
+  width: auto;
+}
+
 .img-contributor {
   height: 240px;
   width: auto;
