@@ -3177,3 +3177,11 @@ button {
 .form-submit-button:hover {
   background: #1b5366;
 }
+
+.design-credits a {
+  color: #edab46;
+}
+
+.design-credits a:hover {
+  color: #367f97;
+}
