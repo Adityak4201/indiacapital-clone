@@ -597,7 +597,9 @@
               <div class="consult-title">
                 <h2 style="margin-bottom: 10px">Send Us <span>Query</span></h2>
               </div>
-              <form name="contact" method="post" action="/contact.html">
+              <div id="error"></div>
+              <div id="success"></div>
+              <form name="contact" id="queryForm">
                 <input
                   type="hidden"
                   name="Date"
@@ -608,8 +610,8 @@
                 />
                 <div class="row">
                   <div class="col-sm-6">
-                    <select name="subject" class="form-control">
-                      <option value="Home Loan">Home Loan</option>
+                    <select name="subject" id="subject" class="form-control">
+                      <option value="Home Loan" selected>Home Loan</option>
                       <option value="Loan Against Property">
                         Loan Against Property
                       </option>
@@ -635,8 +637,8 @@
                     <input
                       type="text"
                       class="form-control"
-                      value=""
                       name="name"
+                      id="name"
                       placeholder="Enter your name"
                       style="margin: 2px 0px"
                     />
@@ -645,8 +647,8 @@
                     <input
                       type="text"
                       class="form-control"
-                      value=""
                       name="city"
+                      id="city"
                       placeholder="Enter your city"
                       style="margin: 2px 0px"
                     />
@@ -657,8 +659,8 @@
                     <input
                       type="text"
                       class="form-control"
-                      value=""
                       name="mobile"
+                      id="mobile"
                       placeholder="Enter your mobile no."
                       style="margin: 2px 0px"
                     />
@@ -667,8 +669,8 @@
                     <input
                       type="text"
                       class="form-control"
-                      value=""
                       name="email"
+                      id="email"
                       placeholder="Enter your email id"
                       style="margin: 2px 0px"
                     />
@@ -677,6 +679,7 @@
                 <textarea
                   class="form-control"
                   name="message"
+                  id="message"
                   placeholder="Enter your feedback / suggession"
                   style="margin: 2px 0px; height: 120px; resize:none;"
                 ></textarea>
@@ -684,6 +687,7 @@
                   class="btn btn-danger form-submit-button"
                   type="submit"
                   name="submit"
+                  id="submit"
                   value="Get a Quote"
                 />
                 <br /><br />
