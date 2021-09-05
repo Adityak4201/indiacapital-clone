@@ -208,25 +208,36 @@ function validateEmail(email) {
 queryForm.onsubmit = async (e) => {
   e.preventDefault();
   var form = document.querySelector("#queryForm");
-  //   console.log(form.querySelector('select[id="subject"]').value);
+  console.log(form.querySelector('textarea[id="message"]').value);
   var error = document.getElementById("error");
   var success = document.getElementById("success");
+  error.innerHTML = "";
+  error.style.display = "none";
+  success.innerHTML = "";
+  success.style.display = "none";
   if (form.querySelector('select[id="subject"]').value === "") {
     error.innerHTML = "Select a valid option from dropdown menu<br>";
-  } else if (form.querySelector('input[id="name"]').value === "") {
+    error.style.display = "visible";
+  } else if (!form.querySelector('input[id="name"]').value === "") {
     error.innerHTML = "Name is required <br>";
+    error.style.display = "visible";
   } else if (form.querySelector('input[id="city"]').value === "") {
     error.innerHTML = "City is required <br>";
+    error.style.display = "visible";
   } else if (form.querySelector('input[id="email"]').value === "") {
     error.innerHTML = "Email ID is required <br>";
+    error.style.display = "visible";
   } else if (
     validateEmail(form.querySelector('input[id="email"]').value) === false
   ) {
     error.innerHTML = "Enter a valid Email Address";
+    error.style.display = "visible";
   } else if (form.querySelector('input[id="mobile"]').value === "") {
     error.innerHTML = "Mobile is required <br>";
+    error.style.display = "visible";
   } else if (form.querySelector('textarea[id="message"]').value === "") {
     error.innerHTML = "Enter a feedback/query<br>";
+    error.style.display = "visible";
   } else {
     error.innerHTML = "";
     try {
@@ -253,7 +264,10 @@ queryForm.onsubmit = async (e) => {
           if (response.status === 200) {
             success.innerHTML =
               "Query Successfull!!!<br/>Proceed to Login Page to continue.";
-            success.style.visibility = "visible";
+            success.style.display = "block";
+          } else {
+            error.innerHTML = "Something is wrong!!";
+            error.style.display = "block";
           }
         })
         .then((data) => {

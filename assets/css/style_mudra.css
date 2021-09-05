@@ -3185,3 +3185,11 @@ button {
 .design-credits a:hover {
   color: #367f97;
 }
+
+#error {
+  display: none;
+}
+
+#success {
+  display: none;
+}
