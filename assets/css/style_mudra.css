@@ -178,7 +178,7 @@ button {
   height: 3px;
   position: absolute;
   bottom: -1.5px;
-  background: #e92527;
+  background: #edab46;
   margin-left: -30px;
   left: 50%;
 }
@@ -238,16 +238,23 @@ button {
   font-weight: 400;
   text-transform: capitalize;
 }
+
+.breadcrumbs ul li a:hover {
+  background: #edab46;
+  border-radius: 10px;
+  padding: 6px 20px;
+}
+
 .breadcrumbs ul li.active a {
-  background: #e92527;
+  background: #edab46;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 6px 20px;
   display: inline-block;
 }
 .breadcrumbs ul li.active a:hover {
-  background: #fff;
-  color: #e92527;
+  background: #1b5366;
+  color: #fff;
 }
 /* Preloader */
 .preeloader {
@@ -1108,7 +1115,7 @@ button {
 .about .about-content h3 span {
   display: inline-block;
   font-weight: 700;
-  color: #e92527;
+  color: #edab46;
 }
 .about .about-content p {
   line-height: 24px;
@@ -1127,10 +1134,10 @@ button {
   margin-right: 15px;
 }
 .about .about-content .button .btn:before {
-  background: #e92527;
+  background: #edab46;
 }
 .about .about-content .button .btn.primary {
-  background: #e92527;
+  background: #edab46;
 }
 .about .about-content .button .btn.primary:before {
   background: #1b5366;
@@ -3143,7 +3150,7 @@ button {
 .blog-cat li.active a,
 .blog-cat li a:hover {
   color: #ffffff;
-  border-color: #fa4d13;
+  border-color: #edab46;
   background-color: #143856;
 }
 
