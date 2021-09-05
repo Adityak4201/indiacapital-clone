@@ -1195,6 +1195,16 @@ button {
   height: 100%;
   width: 100%;
 }
+
+.img-contributor {
+  height: 240px;
+  width: auto;
+}
+
+.img-developer {
+  height: 400px;
+  width: auto;
+}
 /*=============================
 	End About US CSS
 ===============================*/
