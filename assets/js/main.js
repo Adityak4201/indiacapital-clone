@@ -217,27 +217,28 @@ queryForm.onsubmit = async (e) => {
   success.style.display = "none";
   if (form.querySelector('select[id="subject"]').value === "") {
     error.innerHTML = "Select a valid option from dropdown menu<br>";
-    error.style.display = "visible";
-  } else if (!form.querySelector('input[id="name"]').value === "") {
+    error.style.display = "block";
+  } else if (form.querySelector('input[id="name"]').value === "") {
     error.innerHTML = "Name is required <br>";
-    error.style.display = "visible";
+    console.log(error);
+    error.style.display = "block";
   } else if (form.querySelector('input[id="city"]').value === "") {
     error.innerHTML = "City is required <br>";
-    error.style.display = "visible";
+    error.style.display = "block";
   } else if (form.querySelector('input[id="email"]').value === "") {
     error.innerHTML = "Email ID is required <br>";
-    error.style.display = "visible";
+    error.style.display = "block";
   } else if (
     validateEmail(form.querySelector('input[id="email"]').value) === false
   ) {
     error.innerHTML = "Enter a valid Email Address";
-    error.style.display = "visible";
+    error.style.display = "block";
   } else if (form.querySelector('input[id="mobile"]').value === "") {
     error.innerHTML = "Mobile is required <br>";
-    error.style.display = "visible";
+    error.style.display = "block";
   } else if (form.querySelector('textarea[id="message"]').value === "") {
     error.innerHTML = "Enter a feedback/query<br>";
-    error.style.display = "visible";
+    error.style.display = "block";
   } else {
     error.innerHTML = "";
     try {
@@ -263,7 +264,7 @@ queryForm.onsubmit = async (e) => {
           console.log(response);
           if (response.status === 200) {
             success.innerHTML =
-              "Query Successfull!!!<br/>Proceed to Login Page to continue.";
+              "Request received. One of our members will contact you!!.";
             success.style.display = "block";
           } else {
             error.innerHTML = "Something is wrong!!";
@@ -271,13 +272,13 @@ queryForm.onsubmit = async (e) => {
           }
         })
         .then((data) => {
-          console.log(data);
+          // console.log(data);
         })
         .catch((err) => {
-          console.log(err.response);
+          // console.log(err.response);
         });
     } catch (error) {
-      console.log(error.response);
+      // console.log(error.response);
       // if(error.response.errors.code===11000)
       // {
       //     error.innerHTML="Email already exists"
